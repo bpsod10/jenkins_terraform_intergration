@@ -33,7 +33,7 @@ pipeline {
         stage('checkout scm') {
             steps {
                 container('git') {
-                   git credentialsId: 'github_creds', url: 'https://github.com/bpsod10/jenkins_terraform_intergration.git'
+                   git credentialsId: 'github_creds', url: 'https://github.com/bpsod10/terraform-eks.git'                    
                 }
             }
         }
