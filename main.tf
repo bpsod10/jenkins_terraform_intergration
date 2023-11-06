@@ -3,7 +3,6 @@ provider "aws" {
 }
 
 resource "aws_instance" "example" {
-    ami = var.ami_value
-    instance_type = var.instance_type_value
-    subnet_id = var.subnet_id_value
-}
+    ami = ami-0fc5d935ebf8bc3bc
+    instance_type = t2.micro
+    }
